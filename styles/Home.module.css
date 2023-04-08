@@ -1,4 +1,4 @@
-.main {
+.page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,8 +6,13 @@
   min-height: 100vh;
 }
 
+.logo {
+  font-size: 1.75rem;
+}
+
 .headline {
   font-size: 2.5rem;
+  max-width: 700px;
 }
 
 .bodyLg {
@@ -21,11 +26,49 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .page {
+    padding: 1.75rem 2rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .headline {
+    font-size: 1.25rem;
+    padding: 2rem 0 4rem;
+    max-width: 400px;
+  }
+
+  .bodyLg {
+    font-size: 0.9rem;
+  }
+
+  .bodySm {
+    font-size: 0.75rem;
+  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-}
+  .page {
+    padding: 2rem 4rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
 
-@media (prefers-color-scheme: dark) {
+  .headline {
+    font-size: 2rem;
+    padding: 3rem 0 6rem;
+    max-width: 590px;
+  }
+
+  .bodyLg {
+    font-size: 1rem;
+  }
+
+  .bodySm {
+    font-size: 0.75rem;
+  }
 }

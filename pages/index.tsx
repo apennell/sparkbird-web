@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Sparkbird Works</title>
+        {/* ADD LANGUAGE TAG */}
         <meta
           name="description"
           content="Performant Web experiences driven by the principles of accessbility and sustainability."
@@ -35,41 +36,46 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <main className={styles.main}>
+      <div className={styles.page}>
         <header>
-          <h1>
-            <span aria-hidden>₊⊹⁺˖</span> Sparkbird Works
+          <h1 className={styles.logo}>
+            <span aria-hidden>₊⊹⁺˖</span> sparkbird works
           </h1>
         </header>
 
-        <p className={styles.headline}>
-          Thoughtful and performant Web experiences, powered by the principles
-          of{" "}
-          <a
-            href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            accessibility
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://www.sustainablewebmanifesto.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            sustainability
-          </a>
-        </p>
-        <div>
+        <main>
+          <p className={styles.headline}>
+            Thoughtful and performant Web experiences, powered by the principles
+            of{" "}
+            <a
+              href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              accessibility
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.sustainablewebmanifesto.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              sustainability
+            </a>
+          </p>
+        </main>
+
+        <footer>
           <p className={styles.bodyLg}>
             Contact{" "}
             <a href="mailto:hello@sparkbird.works">hello@sparkbird.works</a> to
             inquire about our services.
           </p>
-          <p className={styles.bodySm}>Copyright Annie Pennell 2023</p>
-        </div>
-      </main>
+          <p className={styles.bodySm}>
+            © Annie Pennell for Sparkbird Works, 2023
+          </p>
+        </footer>
+      </div>
     </>
   );
 }
