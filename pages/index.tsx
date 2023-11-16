@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import typog from "@/styles/typog.module.css";
 
 export default function Home() {
   return (
@@ -44,7 +41,7 @@ export default function Home() {
         </header>
 
         <main>
-          <p className={styles.headline}>
+          <h2 className={styles.hero}>
             Thoughtful and performant Web experiences, powered by the principles
             of{" "}
             <a
@@ -62,7 +59,47 @@ export default function Home() {
             >
               sustainability
             </a>
-          </p>
+          </h2>
+
+          <div className={styles.section}>
+            <h3 className={typog.headline}>Services</h3>
+            <ul className={typog.titleSm}>
+              <li>Frontend engineering for web applications and websites</li>
+              <li>
+                Consulting, implementation, and team training in areas of
+                expertise, including:
+                <ul>
+                  <li className={typog.body2}>Web accessibility (a11y)</li>
+                  <li className={typog.body2}>
+                    Localization (l10n), internationalization (i18n), and
+                    translation integrations
+                  </li>
+                  <li className={typog.body2}>
+                    Sustainability in web design and development
+                  </li>
+                  <li className={typog.body2}>
+                    Sanity.io CMS content structuring
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Career support, advice, and coaching for early and mid career
+                folks, especially around topics such as:
+                <ul>
+                  <li className={typog.body2}>
+                    Navigating life after college{" "}
+                    <i>(help! I got a humanities degree!)</i>
+                  </li>
+                  <li className={typog.body2}>
+                    Trying to land your first job out of a coding bootcamp{" "}
+                  </li>
+                  <li className={typog.body2}>
+                    Making tough decisions and evaluating what’s next
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </main>
 
         <footer>
@@ -71,9 +108,7 @@ export default function Home() {
             <a href="mailto:hello@sparkbird.works">hello@sparkbird.works</a> to
             inquire about our services.
           </p>
-          <p className={styles.bodySm}>
-            © Annie Pennell for Sparkbird Works, 2023
-          </p>
+          <p className={styles.bodySm}>© Sparkbird Works LLC, 2023</p>
         </footer>
       </div>
     </>
