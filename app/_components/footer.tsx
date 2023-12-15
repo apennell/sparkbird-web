@@ -1,3 +1,6 @@
+/**
+ * TODO: Add carbon calculator and any relevant s18y info
+ */
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -11,7 +14,9 @@ export default function Footer() {
       </div>
       <div className={styles.footerLinksContainer}>
         <div className={styles.footerLinksGroup}>
-          <div className={styles.footerItem}>₊⊹⁺˖</div>
+          <div className={styles.footerItem}>
+            <b>₊⊹⁺˖</b>
+          </div>
           <div className={styles.footerItem}>
             <a
               href="https://www.linkedin.com/in/anniepennell/"
