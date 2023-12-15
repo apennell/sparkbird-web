@@ -9,7 +9,6 @@
   letter-spacing: 0.0156em; /* 0.25px */
   line-height: 2.875rem; /* 46px */
   font-weight: 600;
-  margin-bottom: 1.5rem;
 }
 
 .headline {
@@ -17,7 +16,6 @@
   letter-spacing: 0.0125em; /* 0.2px */
   line-height: 2rem;
   font-weight: 600;
-  margin-bottom: 1.25rem;
 }
 
 .titleLg {
@@ -26,7 +24,6 @@
   line-height: 1.75rem; /* 24px */
   letter-spacing: 0.009em; /* 0.15px */
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 
 .titleSm {
@@ -34,14 +31,12 @@
   line-height: 1.25; /* 20px */
   letter-spacing: 0.006em; /* 0.1px */
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 .body1 {
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
   letter-spacing: 0.0313em; /* 0.5px */
-  margin-bottom: 1.25rem;
   font-weight: 400;
   font-family: var(--font-sans);
 }
@@ -50,13 +45,39 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   letter-spacing: 0.0156em; /* 0.25px */
-  margin-bottom: 1rem;
   font-weight: 400;
   font-family: var(--font-sans);
 }
 
 .monoLink {
   font-family: var(--font-mono);
+}
+
+.button,
+.buttonWhite {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: 0.078em; /* 1.25px */
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid var(--foreground);
+  padding: 0.75rem;
+  background-color: var(--green);
+}
+
+.buttonWhite {
+  background-color: var(--background);
+}
+
+.button:hover,
+.buttonWhite:hover {
+  background-color: var(--yellow-lt);
+  border-bottom: 2px solid var(--foreground);
+  box-shadow: 2px 2px 0px var(--foreground);
+}
+
+.noBreak {
+  white-space: nowrap;
 }
 
 /* Tablet and Smaller Desktop */
@@ -88,14 +109,12 @@
   .display {
     font-size: 3.0625rem; /* 49px */
     line-height: 4rem;
-    margin-bottom: 2rem;
   }
 
   .headline {
     font-size: 2.1875rem; /* 35px */
     letter-spacing: 0.0156em; /* 0.25px */
     line-height: 2.875rem;
-    margin-bottom: 1.5rem;
   }
 
   .titleLg {
