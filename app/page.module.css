@@ -13,17 +13,51 @@
   border-bottom: 2px solid var(--foreground);
 }
 
-.greenSection {
-  background-color: var(--green);
+.purpleSection {
+  background-color: var(--purple);
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.aboutCard {
+  margin: 0 auto 1rem 0;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .aboutHeadlineSm {
-  display: inline-block;
+  position: relative;
+  max-width: 75%;
+  width: fit-content;
+}
+
+.aboutHeadlineSm:after {
+  background-color: var(--green);
+  content: " ";
+  height: 65%;
+  position: absolute;
+  left: -0.625rem;
+  top: 0.6rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.aboutContent {
+  max-width: 75%;
+  margin-inline-start: auto;
 }
 
 .bottomSection {
   padding: 6rem 4rem;
-  background-color: var(--purple);
+  background-color: var(--green);
   margin: 0 auto;
   text-align: center;
 }
@@ -53,19 +87,4 @@
     max-width: 50rem;
     margin: 0 auto;
   }
-}
-
-.aboutHeadlineSm {
-  position: relative;
-}
-
-.aboutHeadlineSm:after {
-  background-color: var(--green);
-  content: " ";
-  height: 65%;
-  position: absolute;
-  left: -0.625rem;
-  top: 0.6rem;
-  width: 100%;
-  z-index: -1;
 }

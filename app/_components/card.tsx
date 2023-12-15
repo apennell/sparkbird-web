@@ -2,16 +2,16 @@ import styles from "./card.module.css";
 
 export default function Card({
   children,
-  size,
+  size = "md",
   customClass,
 }: {
   children: React.ReactNode;
-  size: "sm" | "lg";
+  size?: "sm" | "md" | "lg";
   customClass?: string;
 }) {
   return (
     <div className={`${styles.container} ${customClass || ""}`}>
-      <div className={styles[`box-${size}`]}>{children}</div>
+      <div className={`${styles[`${size}Box`]} ${styles.box}`}>{children}</div>
     </div>
   );
 }

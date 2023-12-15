@@ -1,4 +1,5 @@
 import Card from "./_components/card";
+import { aboutSectionData } from "./page.data";
 import styles from "./page.module.css";
 
 /**
@@ -20,35 +21,25 @@ export default function Page() {
 
       <div className={styles.section}>
         <div className={styles.sectionContainer}>
-          <h2 className="headline">
-            Sparkbird Works is a solo web development studio &#43; consultancy.
-            <span className={`titleSm ${styles.aboutHeadlineSm}`}>
-              We specialize in building thoughtful and performant web
-              experiences, powered by the principles of{" "}
-              <a
-                href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                accessibility
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://www.sustainablewebmanifesto.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                sustainability
-              </a>
-              .
-            </span>
-          </h2>
+          <Card size="sm" customClass={styles.aboutCard}>
+            <h2 className="headline">Sparkbird Works is ...</h2>
+          </Card>
+          {aboutSectionData.map((section, id) => (
+            <div key={`aboutItem-${id}`} className={styles.aboutItem}>
+              <h3 className={`titleSm ${styles.aboutHeadlineSm}`}>
+                {section.headline}
+              </h3>
+              <div className={styles.aboutContent}>
+                <p className="body1">{section.details}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className={`${styles.section} ${styles.greenSection}`}>
+      <div className={`${styles.section} ${styles.purpleSection}`}>
         <div className={styles.sectionContainer}>
-          <Card size="sm">
+          <Card size="md">
             <h2 className="headline">Services</h2>
             {/** TODO: make these accordion items */}
             <ul className="titleSm">

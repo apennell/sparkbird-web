@@ -12,10 +12,10 @@
   --orange: #ffc29f;
   --yellow: #fff59f;
   --yellow-lt: #fcffda;
-  --green: #b8ff9f;
+  --green: #dfffb8;
   --blue: #a6faff;
   --pink: #ffa6f6;
-  --purple: #a8a6ff;
+  --purple: #e7deff;
 
   --primary: var(--green);
   --secondary: var(--purple);
@@ -67,7 +67,6 @@ h4 {
 h1 {
   font-size: 3.0625rem; /* 49px */
   line-height: 3.375rem; /* 54px */
-  margin-bottom: 2rem;
   font-weight: 400;
 }
 
@@ -76,7 +75,6 @@ h2 {
   letter-spacing: 0.0156em; /* 0.25px */
   line-height: 2.875rem; /* 46px */
   font-weight: 400;
-  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -84,7 +82,6 @@ h3 {
   line-height: 1.5rem; /* 24px */
   letter-spacing: 0.009em; /* 0.15px */
   font-weight: 400;
-  margin-bottom: 1rem;
   font-family: var(--font-sans);
 }
 
@@ -93,7 +90,6 @@ h4 {
   line-height: 1.25; /* 20px */
   letter-spacing: 0.006em; /* 0.1px */
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 a {
