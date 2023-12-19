@@ -7,7 +7,12 @@ export default function Header() {
     {
       _id: "contact",
       href: "mailto:hello@sparkbird.works",
-      title: "Contact",
+      title: (
+        <>
+          <span className={styles.desktopNavLink}>Get in touch</span>
+          <span className={styles.mobileNavLink}>Contact</span>
+        </>
+      ),
       external: true,
     },
   ];
@@ -15,14 +20,14 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.nav}>
-        <Link href="/" className={`${styles.homeLink} headline`}>
+        <Link href="/" className={`${styles.homeLink} titleLg`}>
           <span aria-hidden>₊⊹⁺˖</span> sparkbird works
         </Link>
         {navLinks.length > 0 &&
           navLinks.map((link) => (
             <div key={`${link._id}-nav`} className={styles.navItem}>
               {link.external ? (
-                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                <a href={link.href} target="_blank" className="body1 monoLink">
                   {link.title}
                 </a>
               ) : (

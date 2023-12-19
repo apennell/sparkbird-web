@@ -15,7 +15,7 @@ a.homeLink {
 }
 
 a.homeLink:hover {
-  color: var(--secondary);
+  color: var(--secondary-dk);
   background-color: initial;
 }
 
@@ -31,9 +31,25 @@ a.homeLink:hover {
   white-space: nowrap;
 }
 
+.desktopNavLink {
+  display: none;
+}
+
+.mobileNavLink {
+  display: inline-block;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) {
   .navItem {
     padding: 1.5rem 2rem;
+  }
+
+  .desktopNavLink {
+    display: inline-block;
+  }
+
+  .mobileNavLink {
+    display: none;
   }
 }

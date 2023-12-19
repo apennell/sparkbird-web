@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sparkbird.works",
     description:
-      "Performant Web experiences driven by the principles of accessbility and sustainability.",
+      "Performant web experiences driven by the principles of accessbility and sustainability.",
     // images: [], TODO: add OG images
   },
   // manifest: "", TODO: add manifest - https://developer.mozilla.org/en-US/docs/Web/Manifest

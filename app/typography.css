@@ -28,7 +28,7 @@
 
 .titleSm {
   font-size: 0.875rem; /* 14px */
-  line-height: 1.25; /* 20px */
+  line-height: 1.5; /* 21px */
   letter-spacing: 0.006em; /* 0.1px */
   font-weight: 600;
 }
@@ -63,10 +63,7 @@
   border: 2px solid var(--foreground);
   padding: 0.75rem;
   background-color: var(--green);
-}
-
-.buttonWhite {
-  background-color: var(--background);
+  transition: all 0.2s ease-in-out;
 }
 
 .button:hover,
@@ -74,6 +71,22 @@
   background-color: var(--yellow-lt);
   border-bottom: 2px solid var(--foreground);
   box-shadow: 2px 2px 0px var(--foreground);
+}
+
+.button:active {
+  background-color: var(--yellow);
+}
+
+.buttonWhite {
+  background-color: var(--background);
+}
+
+.buttonWhite:hover {
+  background-color: var(--secondary);
+}
+
+.buttonWhite:active {
+  background-color: var(--secondary-dk);
 }
 
 .noBreak {
