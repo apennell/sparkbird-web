@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import styles from "./header.module.css";
-import { Email } from "../_icons/email";
 
 export default function Header() {
   const navLinks = [
