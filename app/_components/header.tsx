@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import styles from "./header.module.css";
+import { Email } from "../_icons/email";
 
 export default function Header() {
   const navLinks = [
@@ -27,7 +28,7 @@ export default function Header() {
           navLinks.map((link) => (
             <div key={`${link._id}-nav`} className={styles.navItem}>
               {link.external ? (
-                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                <a href={link.href} target="_blank" className="body1 monoLink">
                   {link.title}
                 </a>
               ) : (

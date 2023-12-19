@@ -1,14 +1,11 @@
 import Card from "./_components/card";
-import { aboutSectionData } from "./page.data";
+import { aboutSectionData, servicesSectionData } from "./page.data";
 import styles from "./page.module.css";
 
-/**
- * TODO:
- * - Possibly make more componentized, and/or use data file for copy
- */
 export default function Page() {
   return (
     <main>
+      {/** Hero */}
       <div className={styles.heroSection}>
         <div className={styles.heroCard}>
           <Card size="lg" customClass={styles.heroCardContainer}>
@@ -22,13 +19,14 @@ export default function Page() {
         </div>
       </div>
 
+      {/** About */}
       <div className={styles.section}>
         <div className={styles.sectionContainer}>
           <Card size="sm" customClass={styles.aboutCard}>
             <h2 className="headline">Sparkbird Works is...</h2>
           </Card>
-          {aboutSectionData.map((section, id) => (
-            <div key={`aboutItem-${id}`} className={styles.aboutItem}>
+          {aboutSectionData.map((section, i) => (
+            <div key={`aboutItem-${i}`} className={styles.aboutItem}>
               <h3 className={`titleSm ${styles.aboutHeadlineSm}`}>
                 &#9656; {section.headline}
               </h3>
@@ -40,51 +38,27 @@ export default function Page() {
         </div>
       </div>
 
+      {/** Services */}
       <div className={`${styles.section} ${styles.purpleSection}`}>
         <div className={styles.sectionContainer}>
           <Card size="md">
             <h2 className="headline">Services</h2>
-            {/** TODO: make these accordion items */}
+            {/** TODO: make these accordion items? */}
             <ul>
-              <li className="titleSm">
-                Frontend engineering for web applications and websites
-              </li>
-              <li className="titleSm">
-                Consulting, implementation, and team training in areas of
-                expertise, including:
-                <ul>
-                  <li className="body1">Web accessibility (a11y)</li>
-                  <li className="body1">
-                    Design systems and component libraries
-                  </li>
-                  <li className="body1">
-                    Sustainability in web design and development; lower the
-                    carbon intensity of your projects to reduce environmental
-                    impact <i>and</i> improve web performance
-                  </li>
-                  <li className="body1">
-                    Localization (l10n), internationalization (i18n), and
-                    translation integrations
-                  </li>
-                  <li className="body1">Sanity.io CMS content structuring</li>
-                </ul>
-              </li>
-              <li className="titleSm">
-                Career support, advice, and coaching for early and mid career
-                folks, especially around topics such as:
-                <ul>
-                  <li className="body1">
-                    Navigating life after college{" "}
-                    <i>(&ldquo;help! I got a humanities degree!&rdquo;)</i>
-                  </li>
-                  <li className="body1">
-                    Landing your first job out of a coding bootcamp
-                  </li>
-                  <li className="body1">
-                    Making tough decisions and evaluating what’s next
-                  </li>
-                </ul>
-              </li>
+              {servicesSectionData.map((section, i) => (
+                <li key={`servicesItem-${i}`} className="titleSm">
+                  {section.headline}
+                  {section.details && (
+                    <ul>
+                      {section.details.map((detail, j) => (
+                        <li key={`servicesItemDetail-${j}`} className="body2">
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
             </ul>
           </Card>
         </div>

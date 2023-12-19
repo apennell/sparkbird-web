@@ -15,7 +15,7 @@ a.homeLink {
 }
 
 a.homeLink:hover {
-  color: var(--secondary);
+  color: var(--secondary-dk);
   background-color: initial;
 }
 

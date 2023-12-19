@@ -42,8 +42,8 @@
 
 .aboutHeadlineSm {
   position: relative;
-  max-width: 75%;
   width: fit-content;
+  max-width: 90%;
 }
 
 .aboutHeadlineSm:after {
@@ -58,7 +58,7 @@
 }
 
 .aboutContent {
-  max-width: 75%;
+  max-width: 85%;
   margin-inline-start: auto;
 }
 
@@ -78,6 +78,10 @@
   .section {
     padding: 6rem 4rem;
   }
+
+  .aboutContent {
+    max-width: 80%;
+  }
 }
 
 /* Large desktop */
@@ -93,5 +97,9 @@
   .sectionContainer {
     max-width: 50rem;
     margin: 0 auto;
+  }
+
+  .aboutContent {
+    max-width: 75%;
   }
 }

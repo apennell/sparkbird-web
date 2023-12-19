@@ -6,8 +6,22 @@ export const aboutSectionData: {
 }[] = [
   {
     headline: "a solo web development studio + consultancy",
-    details:
-      "Behind Sparkbird Works is Annie Pennell, an expert frontend engineer with over 8 years of experience building web applications and websites for start ups of all sizes. So yes — that means that “we” is actually Annie, her backyard birds, and a network of trusted partners available for collaboration as needed.",
+    details: (
+      <>
+        Behind Sparkbird Works is{" "}
+        <a
+          href="https://www.linkedin.com/in/anniepennell/"
+          target="_blank"
+          rel="noopener"
+        >
+          Annie Pennell
+        </a>
+        , an expert frontend engineer with over 8 years of experience building
+        web applications and websites for start ups of all sizes. So yes — that
+        means that “we” is actually Annie, her backyard birds, and a network of
+        trusted partners available for collaboration as needed.
+      </>
+    ),
   },
   {
     headline: "a champion of web accessibility",
@@ -18,11 +32,7 @@ export const aboutSectionData: {
     headline: (
       <>
         working toward{" "}
-        <a
-          href="https://www.sustainablewebmanifesto.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <a href="https://www.sustainablewebmanifesto.com/" target="_blank">
           a more sustainable web
         </a>
       </>
@@ -56,4 +66,46 @@ export const aboutSectionData: {
   /* Learning, growing, sharing */
   /* Ethical web development */
   /* Woman-owned small business */
+];
+
+export const servicesSectionData: {
+  headline: string | ReactNode;
+  details?: (string | ReactNode)[];
+}[] = [
+  {
+    headline: "Frontend engineering for web applications and websites",
+    details: [
+      "Scalable applications built from the ground up",
+      "New feature development",
+      "Maintainable design systems and component libraries",
+      "Code migrations and refactors",
+    ],
+  },
+  {
+    headline:
+      "Consulting, implementation, and team training in areas of expertise, including:",
+    details: [
+      "Web accessibility (a11y)",
+      "Design systems and component libraries",
+      <>
+        Sustainability in web design and development; lower the carbon intensity
+        of your projects to reduce environmental impact <i>and</i> improve web
+        performance at the same time
+      </>,
+      "Localization (l10n), internationalization (i18n), and translation integrations",
+      "Sanity.io CMS integrations",
+    ],
+  },
+  {
+    headline:
+      "Career support, advice, and coaching for early and mid career folks, especially around topics such as:",
+    details: [
+      <>
+        Navigating life after college{" "}
+        <i>(&ldquo;help! I got a humanities degree!&rdquo;)</i>
+      </>,
+      "Landing your first job out of a coding bootcamp",
+      "Making tough decisions and evaluating what’s next",
+    ],
+  },
 ];

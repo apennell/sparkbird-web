@@ -21,7 +21,7 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/anniepennell/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="body1"
             >
               LinkedIn
@@ -33,7 +33,7 @@ export default function Footer() {
             <a
               href="https://github.com/apennell"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="body1"
             >
               GitHub
