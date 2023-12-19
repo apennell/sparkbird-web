@@ -8,6 +8,13 @@
   margin: 3rem auto;
 }
 
+.heroCardContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
 .section {
   padding: 4rem 2rem;
   border-bottom: 2px solid var(--foreground);
@@ -23,8 +30,8 @@
   gap: 3rem;
 }
 
-.aboutCard {
-  margin: 0 auto 1rem 0;
+.sectionContainer .aboutCard {
+  margin-left: 0;
 }
 
 .aboutItem {

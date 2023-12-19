@@ -16,9 +16,11 @@
   --blue: #a6faff;
   --pink: #ffa6f6;
   --purple: #e7deff;
+  --purple-dk: #b399f9;
 
   --primary: var(--green);
   --secondary: var(--purple);
+  --secondary-dk: var(--purple-dk);
 
   --foreground: var(--black);
   --background: var(--white);
@@ -95,13 +97,12 @@ h4 {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary-dk);
   transition: background-color 0.2s ease-in-out;
 }
 
 a:hover {
-  /* border-bottom: 2px solid var(--primary); */
-  background-color: var(--secondary);
+  background-color: var(--secondary-dk);
 }
 
 ul {
