@@ -1,6 +1,7 @@
 /**
  * TODO:
  * - Fix wordmark nav hover style
+ * - Separate services into separate cards
  */
 
 import Card from "./_components/Card";
