@@ -24,6 +24,10 @@
   background-color: var(--purple);
 }
 
+.greenSection {
+  background-color: var(--green);
+}
+
 .sectionContainer {
   display: flex;
   flex-direction: column;

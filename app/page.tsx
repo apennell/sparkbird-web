@@ -1,5 +1,15 @@
-import Card from "./_components/card";
-import { aboutSectionData, servicesSectionData } from "./page.data";
+/**
+ * TODO:
+ * - Fix wordmark nav hover style
+ */
+
+import Card from "./_components/Card";
+import { Testimonial } from "./_components/Testimonial";
+import {
+  aboutSectionData,
+  servicesSectionData,
+  testimonials,
+} from "./page.data";
 import styles from "./page.module.css";
 
 export default function Page() {
@@ -27,7 +37,7 @@ export default function Page() {
           </Card>
           {aboutSectionData.map((section, i) => (
             <div key={`aboutItem-${i}`} className={styles.aboutItem}>
-              <h3 className={`titleSm ${styles.aboutHeadlineSm}`}>
+              <h3 className="titleSm greenBgTitle">
                 &#9656; {section.headline}
               </h3>
               <div className={styles.aboutContent}>
@@ -35,6 +45,12 @@ export default function Page() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className={`${styles.section} ${styles.greenSection}`}>
+        <div className={styles.sectionContainer}>
+          <Testimonial testimonial={testimonials[0]} />
         </div>
       </div>
 
@@ -61,6 +77,12 @@ export default function Page() {
               ))}
             </ul>
           </Card>
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <div className={styles.sectionContainer}>
+          <Testimonial testimonial={testimonials[1]} />
         </div>
       </div>
 
