@@ -83,8 +83,7 @@ export const servicesSectionData: {
     ],
   },
   {
-    headline:
-      "Consulting, implementation, and team training in areas of expertise, including:",
+    headline: "Consulting, implementation, and team training",
     details: [
       "Web accessibility (a11y)",
       "Design systems and component libraries",
@@ -98,8 +97,7 @@ export const servicesSectionData: {
     ],
   },
   {
-    headline:
-      "Career support, advice, and coaching for early and mid career folks, especially around topics such as:",
+    headline: "Career support and advising for early to mid career folks",
     details: [
       <>
         Navigating life after college{" "}

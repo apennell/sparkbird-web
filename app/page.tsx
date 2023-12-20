@@ -49,6 +49,7 @@ export default function Page() {
         </div>
       </div>
 
+      {/** Testimonial */}
       <div className={`${styles.section} ${styles.greenSection}`}>
         <div className={styles.sectionContainer}>
           <Testimonial testimonial={testimonials[0]} />
@@ -59,12 +60,12 @@ export default function Page() {
       <div className={`${styles.section} ${styles.purpleSection}`}>
         <div className={styles.sectionContainer}>
           <Card size="md">
-            <h2 className="headline">Services</h2>
-            {/** TODO: make these accordion items? */}
-            <ul>
+            <div className={styles.servicesContainer}>
+              <h2 className="headline">Services</h2>
+
               {servicesSectionData.map((section, i) => (
-                <li key={`servicesItem-${i}`} className="titleSm">
-                  {section.headline}
+                <div key={`servicesItem-${i}`}>
+                  <h3 className="titleSm ">{section.headline}</h3>
                   {section.details && (
                     <ul>
                       {section.details.map((detail, j) => (
@@ -74,12 +75,14 @@ export default function Page() {
                       ))}
                     </ul>
                   )}
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </Card>
         </div>
       </div>
+
+      {/** Testimonial */}
 
       <div className={styles.section}>
         <div className={styles.sectionContainer}>
@@ -87,6 +90,7 @@ export default function Page() {
         </div>
       </div>
 
+      {/** Contact CTA */}
       <div className={styles.bottomSection}>
         <a href="mailto:hello@sparkbird.works" className="buttonWhite">
           Work with us
