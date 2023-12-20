@@ -24,10 +24,14 @@
   background-color: var(--purple);
 }
 
+.greenSection {
+  background-color: var(--green);
+}
+
 .sectionContainer {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .sectionContainer .aboutCard {
@@ -58,8 +62,13 @@
 }
 
 .aboutContent {
-  max-width: 85%;
-  margin-inline-start: auto;
+  margin-inline-start: 1rem;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .bottomSection {
@@ -79,8 +88,16 @@
     padding: 6rem 4rem;
   }
 
+  .sectionContainer {
+    gap: 3rem;
+  }
+
   .aboutContent {
     max-width: 80%;
+  }
+
+  .servicesContainer {
+    gap: 2rem;
   }
 }
 
@@ -101,5 +118,6 @@
 
   .aboutContent {
     max-width: 75%;
+    margin-inline-start: auto;
   }
 }

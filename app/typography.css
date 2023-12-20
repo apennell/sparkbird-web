@@ -41,12 +41,18 @@
   font-family: var(--font-sans);
 }
 
-.body2 {
+.body2,
+.caption {
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   letter-spacing: 0.0156em; /* 0.25px */
   font-weight: 400;
   font-family: var(--font-sans);
+}
+
+.caption {
+  font-weight: 600;
+  font-family: var(--font-mono);
 }
 
 .monoLink {
@@ -61,7 +67,7 @@
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid var(--foreground);
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   background-color: var(--green);
   transition: all 0.2s ease-in-out;
 }
@@ -91,6 +97,38 @@
 
 .noBreak {
   white-space: nowrap;
+}
+
+.greenBgTitle,
+.purpleBgTitle,
+.yellowBgTitle {
+  position: relative;
+  width: fit-content;
+  max-width: 90%;
+}
+
+.greenBgTitle:after,
+.purpleBgTitle:after,
+.yellowBgTitle:after {
+  content: " ";
+  height: 65%;
+  position: absolute;
+  left: -0.625rem;
+  top: 0.6rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.greenBgTitle:after {
+  background-color: var(--green);
+}
+
+.purpleBgTitle:after {
+  background-color: var(--purple);
+}
+
+.yellowBgTitle:after {
+  background-color: var(--yellow);
 }
 
 /* Tablet and Smaller Desktop */

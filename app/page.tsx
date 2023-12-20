@@ -1,5 +1,16 @@
-import Card from "./_components/card";
-import { aboutSectionData, servicesSectionData } from "./page.data";
+/**
+ * TODO:
+ * - Fix wordmark nav hover style
+ * - Separate services into separate cards
+ */
+
+import Card from "./_components/Card";
+import { Testimonial } from "./_components/Testimonial";
+import {
+  aboutSectionData,
+  servicesSectionData,
+  testimonials,
+} from "./page.data";
 import styles from "./page.module.css";
 
 export default function Page() {
@@ -27,7 +38,7 @@ export default function Page() {
           </Card>
           {aboutSectionData.map((section, i) => (
             <div key={`aboutItem-${i}`} className={styles.aboutItem}>
-              <h3 className={`titleSm ${styles.aboutHeadlineSm}`}>
+              <h3 className="titleSm greenBgTitle">
                 &#9656; {section.headline}
               </h3>
               <div className={styles.aboutContent}>
@@ -38,16 +49,23 @@ export default function Page() {
         </div>
       </div>
 
+      {/** Testimonial */}
+      <div className={`${styles.section} ${styles.greenSection}`}>
+        <div className={styles.sectionContainer}>
+          <Testimonial testimonial={testimonials[0]} />
+        </div>
+      </div>
+
       {/** Services */}
       <div className={`${styles.section} ${styles.purpleSection}`}>
         <div className={styles.sectionContainer}>
           <Card size="md">
-            <h2 className="headline">Services</h2>
-            {/** TODO: make these accordion items? */}
-            <ul>
+            <div className={styles.servicesContainer}>
+              <h2 className="headline">Services</h2>
+
               {servicesSectionData.map((section, i) => (
-                <li key={`servicesItem-${i}`} className="titleSm">
-                  {section.headline}
+                <div key={`servicesItem-${i}`}>
+                  <h3 className="titleSm ">{section.headline}</h3>
                   {section.details && (
                     <ul>
                       {section.details.map((detail, j) => (
@@ -57,13 +75,22 @@ export default function Page() {
                       ))}
                     </ul>
                   )}
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </Card>
         </div>
       </div>
 
+      {/** Testimonial */}
+
+      <div className={styles.section}>
+        <div className={styles.sectionContainer}>
+          <Testimonial testimonial={testimonials[1]} />
+        </div>
+      </div>
+
+      {/** Contact CTA */}
       <div className={styles.bottomSection}>
         <a href="mailto:hello@sparkbird.works" className="buttonWhite">
           Work with us

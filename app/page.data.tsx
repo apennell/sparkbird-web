@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Testimonial } from "./_components/Testimonial";
 
 export const aboutSectionData: {
   headline: string | ReactNode;
@@ -82,8 +83,7 @@ export const servicesSectionData: {
     ],
   },
   {
-    headline:
-      "Consulting, implementation, and team training in areas of expertise, including:",
+    headline: "Consulting, implementation, and team training",
     details: [
       "Web accessibility (a11y)",
       "Design systems and component libraries",
@@ -97,8 +97,7 @@ export const servicesSectionData: {
     ],
   },
   {
-    headline:
-      "Career support, advice, and coaching for early and mid career folks, especially around topics such as:",
+    headline: "Career support and advising for early to mid career folks",
     details: [
       <>
         Navigating life after college{" "}
@@ -107,5 +106,58 @@ export const servicesSectionData: {
       "Landing your first job out of a coding bootcamp",
       "Making tough decisions and evaluating what’s next",
     ],
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    client: { name: "John Keck", company: "Voura", title: "Founder and CEO" },
+    pullQuote:
+      "Hiring Annie as a frontend engineering contractor at Voura was one of the best team decisions I’ve made in my career.",
+    quote: (
+      <>
+        <p>
+          She quickly shipped customer-facing UI while elevating the quality of
+          our codebase and building a design system all at the same time. After
+          only a few months, we had reusable components that allowed us to
+          easily add new functionality and user experiences at the drop of a
+          hat.
+        </p>
+        <p>
+          Outside of her technical skills and speed of development, Annie is an
+          amazing collaborator and communicator. I would recommend for anyone
+          needing frontend engineering help to hire Annie. Your project will get
+          done at a very high level and your engineering culture will more
+          likely than not change for the better!
+        </p>
+      </>
+    ),
+  },
+  {
+    client: {
+      name: "Billy Hollis",
+      company: "Voura",
+      title: "Founding Designer",
+    },
+    pullQuote:
+      "She helped to carve clarity out of ambiguity and ensure that we not only delivered on time, but with the highest quality possible.",
+    quote: (
+      <>
+        <p>
+          Annie is by far the best front end developer I’ve ever had the
+          pleasure of working with. She brings a high quality of excellence to
+          everything she does. She is always thinking about the end user and how
+          to ensure that the front end scales. She thinks both systematically as
+          well as holistically. Annie has a keen eye for design and there were
+          times where I couldn’t tell the difference between my Figma files and
+          production.
+        </p>
+        <p>
+          She challenged and grew my understanding of accessible and sustainable
+          design. Her comments during reviews were so thorough and thoughtful -
+          I can’t say enough. Annie truly levels up anything she works on.
+        </p>
+      </>
+    ),
   },
 ];

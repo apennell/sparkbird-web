@@ -20,9 +20,11 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.nav}>
-        <Link href="/" className={`${styles.homeLink} titleLg`}>
-          <span aria-hidden>₊⊹⁺˖</span> sparkbird works
-        </Link>
+        <div className={styles.homeLink}>
+          <Link href="/" className="titleLg">
+            <span aria-hidden>₊⊹⁺˖</span> sparkbird works
+          </Link>
+        </div>
         {navLinks.length > 0 &&
           navLinks.map((link) => (
             <div key={`${link._id}-nav`} className={styles.navItem}>

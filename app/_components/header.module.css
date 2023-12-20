@@ -5,18 +5,20 @@
   border-bottom: 2px solid var(--foreground);
 }
 
-a.homeLink {
-  font-family: var(--font-mono);
+.homeLink {
   margin-bottom: 0;
   padding: 1rem;
   flex-grow: 2;
   align-self: center;
+}
+
+.homeLink a {
+  font-family: var(--font-mono);
   border-bottom: 0;
 }
 
-a.homeLink:hover {
-  color: var(--secondary-dk);
-  background-color: initial;
+.homeLink a:hover {
+  background-color: var(--green);
 }
 
 .navItem {

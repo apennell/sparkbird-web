@@ -57,7 +57,6 @@ li {
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
   letter-spacing: 0.0313em; /* 0.5px */
-  margin-bottom: 1.25rem;
 }
 
 h1,
@@ -112,11 +111,11 @@ ul {
 
 ul li {
   list-style-type: disclosure-closed;
+  margin-bottom: 0.75rem;
 }
 
 ul ul li {
   list-style-type: square;
-  margin-bottom: 0.75rem;
 }
 
 li {
