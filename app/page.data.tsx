@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
-import { Testimonial } from "./_components/Testimonial";
+import { ReactNode } from 'react';
+import { Testimonial } from './_components/Testimonial';
 
 export const aboutSectionData: {
   headline: string | ReactNode;
   details: string | ReactNode;
 }[] = [
   {
-    headline: "a solo web development studio + consultancy",
+    headline: 'a solo web development studio + consultancy',
     details: (
       <>
-        Behind Sparkbird Works is{" "}
+        Behind Sparkbird Works is{' '}
         <a
           href="https://www.linkedin.com/in/anniepennell/"
           target="_blank"
@@ -17,7 +17,7 @@ export const aboutSectionData: {
         >
           Annie Pennell
         </a>
-        , an expert frontend engineer with over 8 years of experience building
+        , an expert frontend engineer with over a decade of experience building
         web applications and websites for start ups of all sizes. So yes — that
         means that “we” is actually Annie, her backyard birds, and a network of
         trusted partners available for collaboration as needed.
@@ -25,40 +25,41 @@ export const aboutSectionData: {
     ),
   },
   {
-    headline: "a champion of web accessibility",
+    headline: 'a champion of web accessibility',
     details:
       "We believe that the web should be equally accessible to all, and that building with users of all abilities and circumstances in mind is a fundamental part of the web development process. Accessibility isn't a ticket relegated to the backlog for “someday”; it’s a functional requirement that’s met in every pull request.",
   },
   {
     headline: (
       <>
-        working toward{" "}
+        working toward{' '}
         <a href="https://www.sustainablewebmanifesto.com/" target="_blank">
           a more sustainable web
         </a>
       </>
     ),
     details:
-      "The internet is a huge source of carbon emissions, which is a fact still largely unknown even within the software industry. We work to reduce the carbon footprint of the web by building performant websites and applications.",
+      'The internet is a huge source of carbon emissions, which is a fact still largely unknown even within the software industry. We work to reduce the carbon footprint of the web by building performant websites and applications.',
   },
   {
     headline: (
       <>
-        based in Richmond, California, and{" "}
+        based in Richmond, California, and{' '}
         <span className="noBreak">available globally</span>
       </>
     ),
     details:
-      "We’re located just a short ferry ride from San Francisco, but remote work is our specialty. We’re available for projects anywhere in the world.",
+      'We’re located just a short ferry ride from San Francisco, but remote work is our specialty. We’re available for projects anywhere in the world.',
   },
   {
-    headline: "currently accepting new projects!",
+    headline: 'currently accepting new projects!',
     details: (
       <>
-        We’re now accepting new projects for 2024 and are open to collaborations
-        and consultations of any size or scope. If you’re interested in working
-        together, please <a href="mailto:hello@sparkbird.works">get in touch</a>
-        . We’d love to discuss what you have in mind!
+        We’re now accepting new projects for 2026 and are open to the
+        possibility of collaborations and consultations of any size or scope. If
+        you’re interested in working together, please{' '}
+        <a href="mailto:hello@sparkbird.works">get in touch</a>. We’d love to
+        discuss what you have in mind!
       </>
     ),
   },
@@ -74,46 +75,46 @@ export const servicesSectionData: {
   details?: (string | ReactNode)[];
 }[] = [
   {
-    headline: "Frontend engineering for web applications and websites",
+    headline: 'Frontend engineering for web applications and websites',
     details: [
-      "Scalable applications built from the ground up",
-      "New feature development",
-      "Maintainable design systems and component libraries",
-      "Code migrations and refactors",
+      'Scalable applications built from the ground up',
+      'New feature development',
+      'Maintainable design systems and component libraries',
+      'Code migrations and refactors',
     ],
   },
   {
-    headline: "Consulting, implementation, and team training",
+    headline: 'Consulting, implementation, and team training',
     details: [
-      "Web accessibility (a11y)",
-      "Design systems and component libraries",
+      'Web accessibility (a11y)',
+      'Design systems and component libraries',
       <>
         Sustainability in web design and development; lower the carbon intensity
         of your projects to reduce environmental impact <i>and</i> improve web
         performance at the same time
       </>,
-      "Localization (l10n), internationalization (i18n), and translation integrations",
-      "Sanity.io CMS integrations",
+      'Localization (l10n), internationalization (i18n), and translation integrations',
+      'Sanity.io CMS integrations',
     ],
   },
   {
-    headline: "Career support and advising for early to mid career folks",
+    headline: 'Career support and advising for early to mid career folks',
     details: [
       <>
-        Navigating life after college{" "}
+        Navigating life after college{' '}
         <i>(&ldquo;help! I got a humanities degree!&rdquo;)</i>
       </>,
-      "Landing your first job out of a coding bootcamp",
-      "Making tough decisions and evaluating what’s next",
+      'Landing your first job out of a coding bootcamp',
+      'Making tough decisions and evaluating what’s next',
     ],
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
-    client: { name: "John Keck", company: "Voura", title: "Founder and CEO" },
+    client: { name: 'John Keck', company: 'Voura', title: 'Founder and CEO' },
     pullQuote:
-      "Hiring Annie as a frontend engineering contractor at Voura was one of the best team decisions I’ve made in my career.",
+      'Hiring Annie as a frontend engineering contractor at Voura was one of the best team decisions I’ve made in my career.',
     quote: (
       <>
         <p>
@@ -135,12 +136,12 @@ export const testimonials: Testimonial[] = [
   },
   {
     client: {
-      name: "Billy Hollis",
-      company: "Voura",
-      title: "Founding Designer",
+      name: 'Billy Hollis',
+      company: 'Voura',
+      title: 'Founding Designer',
     },
     pullQuote:
-      "She helped to carve clarity out of ambiguity and ensure that we not only delivered on time, but with the highest quality possible.",
+      'She helped to carve clarity out of ambiguity and ensure that we not only delivered on time, but with the highest quality possible.',
     quote: (
       <>
         <p>

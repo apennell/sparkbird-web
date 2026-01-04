@@ -1,16 +1,13 @@
 /**
  * TODO: Add carbon calculator and any relevant s18y info
  */
-import styles from "./footer.module.css";
+import styles from './footer.module.css';
 
 export default function Footer() {
-  const date = new Date();
-  const year = date.getFullYear();
-
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <p className="body2">&#169; Sparkbird Works LLC, {year}</p>
+        <p className="body2">&#169; Sparkbird Works LLC, 2026</p>
       </div>
       <div className={styles.footerLinksContainer}>
         <div className={styles.footerLinksGroup}>
