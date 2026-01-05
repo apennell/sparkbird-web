@@ -1,16 +1,16 @@
-import styles from "./card.module.css";
+import styles from './card.module.css';
 
 export default function Card({
   children,
-  size = "md",
-  customClass = "",
+  size = 'md',
+  customClass = '',
 }: {
   children: React.ReactNode;
-  size?: "sm" | "md" | "lg";
+  size?: 'sm' | 'md' | 'lg';
   customClass?: string;
 }) {
-  const containerClasses = [styles.container, customClass].join(" ");
-  const boxClasses = [styles.box, styles[`${size}Box`]].join(" ");
+  const containerClasses = [styles.container, customClass].join(' ');
+  const boxClasses = [styles.box, styles[`${size}Box`]].join(' ');
 
   return (
     <div className={containerClasses}>

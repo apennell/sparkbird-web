@@ -4,14 +4,14 @@
  * - Separate services into separate cards
  */
 
-import Card from "./_components/Card";
-import { Testimonial } from "./_components/Testimonial";
+import Card from './_components/Card';
+import { Testimonial } from './_components/Testimonial';
 import {
   aboutSectionData,
   servicesSectionData,
   testimonials,
-} from "./page.data";
-import styles from "./page.module.css";
+} from './page.data';
+import styles from './page.module.css';
 
 export default function Page() {
   return (
@@ -57,7 +57,10 @@ export default function Page() {
       </div>
 
       {/** Services */}
-      <div className={`${styles.section} ${styles.purpleSection}`}>
+      <div
+        className={`${styles.section} ${styles.purpleSection}`}
+        id="services"
+      >
         <div className={styles.sectionContainer}>
           <Card size="md">
             <div className={styles.servicesContainer}>

@@ -1,42 +1,58 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import styles from "./header.module.css";
+import styles from './header.module.css';
+
+const NAV_LINKS = [
+  {
+    _id: 'resources',
+    href: 'resources',
+    title: 'Resources',
+    external: false,
+  },
+  {
+    _id: 'services',
+    href: '/#services',
+    title: 'Services',
+    external: false,
+  },
+  {
+    _id: 'contact',
+    href: 'mailto:hello@sparkbird.works',
+    title: (
+      <>
+        <span className={styles.desktopNavLink}>Get in touch</span>
+        <span className={styles.mobileNavLink}>Contact</span>
+      </>
+    ),
+    external: true,
+  },
+];
 
 export default function Header() {
-  const navLinks = [
-    {
-      _id: "contact",
-      href: "mailto:hello@sparkbird.works",
-      title: (
-        <>
-          <span className={styles.desktopNavLink}>Get in touch</span>
-          <span className={styles.mobileNavLink}>Contact</span>
-        </>
-      ),
-      external: true,
-    },
-  ];
-
   return (
-    <header>
-      <nav className={styles.nav}>
+    <header className={styles.headerContainer}>
+      <div className={styles.logoContainer}>
         <div className={styles.homeLink}>
           <Link href="/" className="titleLg">
             <span aria-hidden>₊⊹⁺˖</span> sparkbird works
           </Link>
         </div>
-        {navLinks.length > 0 &&
-          navLinks.map((link) => (
-            <div key={`${link._id}-nav`} className={styles.navItem}>
-              {link.external ? (
-                <a href={link.href} target="_blank" className="body1 monoLink">
-                  {link.title}
-                </a>
-              ) : (
-                <Link href={`/${link.href}`}>{link.title}</Link>
-              )}
+      </div>
+      <nav className={styles.linksContainer}>
+        {NAV_LINKS.map(({ href, external, title, _id }) => (
+          <div key={`${_id}-nav`} className={styles.linksGroup}>
+            <div className={styles.navItem}>
+              <a
+                href={href}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
+                className="body1"
+              >
+                {title}
+              </a>
             </div>
-          ))}
+          </div>
+        ))}
       </nav>
     </header>
   );
