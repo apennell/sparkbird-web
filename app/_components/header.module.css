@@ -1,15 +1,24 @@
-.nav {
+.headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border-bottom: 2px solid var(--foreground);
+  flex-wrap: wrap;
+  background-color: var(--foreground);
+  gap: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.logoContainer {
+  padding-right: 2rem;
+  display: flex;
+  flex-grow: 2;
+  background-color: var(--background);
 }
 
 .homeLink {
   margin-bottom: 0;
   padding: 1rem;
-  flex-grow: 2;
-  align-self: center;
 }
 
 .homeLink a {
@@ -21,16 +30,30 @@
   background-color: var(--green);
 }
 
+.linksContainer {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  display: flex;
+  gap: 2px;
+}
+
+.linksGroup {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
 .navItem {
   padding: 1rem;
-  border-inline-start: 2px solid var(--foreground);
-  font-family: var(--font-mono);
   display: flex;
-  align-items: center;
+  flex-grow: 1;
+  background-color: var(--background);
 }
 
 .navItem a {
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 .desktopNavLink {
@@ -43,6 +66,12 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) {
+  .linksContainer,
+  .linksGroup,
+  .navItem {
+    flex-grow: 0;
+  }
+
   .navItem {
     padding: 1.5rem 2rem;
   }
