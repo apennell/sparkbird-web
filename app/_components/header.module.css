@@ -64,16 +64,12 @@
   display: inline-block;
 }
 
-/* Tablet and Smaller Desktop */
+/* Tablet and larger */
 @media (min-width: 701px) {
   .linksContainer,
   .linksGroup,
   .navItem {
     flex-grow: 0;
-  }
-
-  .navItem {
-    padding: 1.5rem 2rem;
   }
 
   .desktopNavLink {
