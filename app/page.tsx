@@ -57,7 +57,10 @@ export default function Page() {
       </div>
 
       {/** Services */}
-      <div className={`${styles.section} ${styles.purpleSection}`}>
+      <div
+        className={`${styles.section} ${styles.purpleSection}`}
+        id="services"
+      >
         <div className={styles.sectionContainer}>
           <Card size="md">
             <div className={styles.servicesContainer}>

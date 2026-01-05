@@ -2,27 +2,33 @@ import Link from 'next/link';
 
 import styles from './header.module.css';
 
-export default function Header() {
-  const navLinks = [
-    {
-      _id: 'resources',
-      href: 'resources',
-      title: 'Resources',
-      external: false,
-    },
-    {
-      _id: 'contact',
-      href: 'mailto:hello@sparkbird.works',
-      title: (
-        <>
-          <span className={styles.desktopNavLink}>Get in touch</span>
-          <span className={styles.mobileNavLink}>Contact</span>
-        </>
-      ),
-      external: true,
-    },
-  ];
+const NAV_LINKS = [
+  {
+    _id: 'resources',
+    href: 'resources',
+    title: 'Resources',
+    external: false,
+  },
+  {
+    _id: 'services',
+    href: '/#services',
+    title: 'Services',
+    external: false,
+  },
+  {
+    _id: 'contact',
+    href: 'mailto:hello@sparkbird.works',
+    title: (
+      <>
+        <span className={styles.desktopNavLink}>Get in touch</span>
+        <span className={styles.mobileNavLink}>Contact</span>
+      </>
+    ),
+    external: true,
+  },
+];
 
+export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.logoContainer}>
@@ -33,7 +39,7 @@ export default function Header() {
         </div>
       </div>
       <nav className={styles.linksContainer}>
-        {navLinks.map(({ href, external, title, _id }) => (
+        {NAV_LINKS.map(({ href, external, title, _id }) => (
           <div key={`${_id}-nav`} className={styles.linksGroup}>
             <div className={styles.navItem}>
               <a
