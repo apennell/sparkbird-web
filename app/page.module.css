@@ -1,6 +1,6 @@
 .heroSection {
   padding: 2rem;
-  background-color: var(--purple);
+  background-color: var(--secondary);
   border-bottom: 2px solid var(--foreground);
 }
 
@@ -21,11 +21,11 @@
 }
 
 .purpleSection {
-  background-color: var(--purple);
+  background-color: var(--secondary);
 }
 
 .greenSection {
-  background-color: var(--green);
+  background-color: var(--primary);
 }
 
 .sectionContainer {
@@ -51,8 +51,8 @@
 }
 
 .aboutHeadlineSm:after {
-  background-color: var(--green);
-  content: " ";
+  background-color: var(--primary);
+  content: ' ';
   height: 65%;
   position: absolute;
   left: -0.625rem;
@@ -73,7 +73,7 @@
 
 .bottomSection {
   padding: 6rem 4rem;
-  background-color: var(--green);
+  background-color: var(--primary);
   margin: 0 auto;
   text-align: center;
 }

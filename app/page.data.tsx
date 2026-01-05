@@ -77,7 +77,7 @@ export const servicesSectionData: {
   {
     headline: 'Frontend engineering for web applications and websites',
     details: [
-      'Scalable applications built from the ground up',
+      'Scalable applications built from the ground up, using technologies including JavaScript and TypeScript, React, Next.js, and semantic HTML',
       'New feature development',
       'Maintainable design systems and component libraries',
       'Code migrations and refactors',

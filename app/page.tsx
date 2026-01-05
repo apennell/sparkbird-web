@@ -4,14 +4,14 @@
  * - Separate services into separate cards
  */
 
-import Card from "./_components/Card";
-import { Testimonial } from "./_components/Testimonial";
+import Card from './_components/Card';
+import { Testimonial } from './_components/Testimonial';
 import {
   aboutSectionData,
   servicesSectionData,
   testimonials,
-} from "./page.data";
-import styles from "./page.module.css";
+} from './page.data';
+import styles from './page.module.css';
 
 export default function Page() {
   return (
